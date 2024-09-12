@@ -42,6 +42,12 @@ class UserMapperTest {
     }
 
     @Test
+    void testQueryByIds2() {
+        List<User> users = userMapper.queryUserByIds(List.of(1L, 2L, 3L, 4L));
+        users.forEach(System.out::println);
+    }
+
+    @Test
     void testUpdateById() {
         User user = new User();
         user.setId(5L);

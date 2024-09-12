@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 
 @Data
 //当表名与数据库中的表名不一致时
+
 //需要对应数据库中的表名
 @TableName("tb_user")
 public class User {

@@ -16,5 +16,5 @@ public interface UserMapper extends BaseMapper<User> {
 //
 //    User queryUserById(@Param("id") Long id);
 //
-//    List<User> queryUserByIds(@Param("ids") List<Long> ids);
+    List<User> queryUserByIds(@Param("ids") List<Long> ids);
 }

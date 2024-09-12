@@ -40,16 +40,16 @@
 <!--        WHERE id = #{id}-->
 <!--    </select>-->
 
-<!--    <select id="queryUserByIds" resultType="com.itheima.mp.domain.po.User">-->
-<!--        SELECT *-->
-<!--        FROM user-->
-<!--        <if test="ids != null">-->
-<!--            WHERE id IN-->
-<!--            <foreach collection="ids" open="(" close=")" item="id" separator=",">-->
-<!--                #{id}-->
-<!--            </foreach>-->
-<!--        </if>-->
-<!--        LIMIT 10-->
-<!--    </select>-->
+    <select id="queryUserByIds" resultType="com.itheima.mp.domain.po.User">
+        SELECT *
+        FROM tb_user
+        <if test="ids != null">
+            WHERE id IN
+            <foreach collection="ids" open="(" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </if>
+        LIMIT 10
+    </select>
 
 </mapper>
